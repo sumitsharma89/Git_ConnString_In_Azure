@@ -2,13 +2,13 @@ using sqlapp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = "Endpoint=https://appconfig1000233.azconfig.io;Id=E0j2-l8-s0:ywglWz9a/tngma/7q5/S;Secret=QA16TLCFkzE7j+BmvBnm/zlC2VJ/X4HqViAuA/PMHeQ=";
+//var connectionString = "Endpoint=https://appconfig1000233.azconfig.io;Id=E0j2-l8-s0:ywglWz9a/tngma/7q5/S;Secret=QA16TLCFkzE7j+BmvBnm/zlC2VJ/X4HqViAuA/PMHeQ=";
 
-builder.Host.ConfigureAppConfiguration(builder =>
-{
-    //Connect to your App Config Store using the connection string
-    builder.AddAzureAppConfiguration(connectionString);
-});
+//builder.Host.ConfigureAppConfiguration(builder =>
+//{
+//    //Connect to your App Config Store using the connection string
+//    builder.AddAzureAppConfiguration(connectionString);
+//});
 
 builder.Services.AddTransient<IProductService, ProductService>();
 
